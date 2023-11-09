@@ -22,11 +22,11 @@ useEffect(()=>{
       {
         user.map((item)=>{
           return(
-            <div   key={item.id} className=" bg-white w-[350px] h-[200px]   p-5 border-4 border-black rounded-sm"> 
+            <div   key={item.id} className=" bg-indigo-100 w-[350px] h-[200px]   p-5 border-4 border-black rounded-sm"> 
                     <h1 className='text-xxl font-bold  '>USER ID : <span className=' text-[25px] font-bold text-indigo-700 '> {item.id}</span></h1>
                     <h2 className="text-xl font-bold text-indigo-300"> {item.name} </h2>
                     <h2 className="text-xl font-bold text-black-300"> {item.email} </h2>
-                    <Link className='inline-block w-fit bg-indigo-100 p-2 mt-4 rounded-[5px] border-2 border-black text-lg font-bold text-black' > Detales </Link>
+                    <Link to={`/post/${item.id}`} className='inline-block w-fit bg-indigo-400 p-2 mt-4 rounded-[5px] border-2 border-black text-lg font-bold text-black' > Detales </Link>
                     
         </div>
           )

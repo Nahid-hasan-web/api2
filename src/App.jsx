@@ -11,7 +11,7 @@ function App() {
 
 <Routes>
     <Route path='/' element={<User/>} />
-    <Route path='/post/:user_ID' element={<Ditels/>} />
+    <Route path='/post/:id' element={<Ditels/>} />
     
 </Routes>
 
